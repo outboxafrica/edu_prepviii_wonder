@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  width: 100%;
+}
+.topnav {
+  background-color: #4cadb9;
+  overflow: hidden;
+  height: 10vh;
+  position: fixed;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #111;
+  text-align: center;
+  padding: 18px 150px 18px 0;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: #ffff;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4cadb9;
+  color: #ffff;
+}
+.vl {
+  border-left: 3px solid grey;
+  height: 24px;
+  position: absolute;
+  left: 80%;
+  margin-left: -3px;
+  top: 15px;
+}
+.logo {
+  float: left;
+  padding: 14px 16px;
+  margin-left: 100px;
+  display: block;
+  font-size: 40px;
+  font-weight: bold;
+  color: #111;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+}
+.slideshow-container {
+  width: 100%;
+  height: 85vh;
+  box-shadow: 0 25px 30px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.slideshow-container h1 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 1000;
+}
+.slideshow-container .centered {
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+.slideshow-container p {
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 1;
+  color: grey;
+  font-weight: bold;
+  bottom: 0;
+  text-align: center;
+}
+.slideshow-container i {
+  margin-left: 50%;
+  margin-top: 10px;
+}
+#project-container {
+  width: 100%;
+  height: 100%;
+}
+#project-container h1 {
+  margin-top: 0;
+  color: #111;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 45%;
+}
+#project-container .card {
+  width: 300px;
+  height: 330px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  flex-direction: column;
+  margin: 30px 70px;
+  padding-left: 50px;
+}
+#project-container .card .span {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #229aaf;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 50px;
+  justify-content: center;
+  align-items: center;
+  font-family: calibri;
+  font-weight: bold;
+}
+#project-container .card .title {
+  font-weight: 700;
+  font-size: 20px;
+  color: black;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+#project-container .card .info {
+  line-height: 2;
+  font-size: 14px;
+  font-weight: bold;
+  color: grey;
+  text-align: left;
+  margin-left: -30px;
+  margin-top: 10px;
+}
+#project-container .card a {
+  color: #229aaf;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: transparent;
+  margin-left: 10px;
+  top: 50px;
+}
+
+#project-container .card a:hover {
+  color: #080463;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#portfolio {
+  height: 20vh;
+  width: 100%;
+  margin-top: 20px;
+}
+#portfolio p {
+  color: grey;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 2;
+  cursor: pointer;
+}
+#portfolio .blue {
+  color: #229aaf;
+}
+#portfolio .port h6 {
+  color: black;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+  margin-left: 30%;
+  cursor: pointer;
+}
+#footer {
+  padding: 20px;
+  height: 30vh;
+  margin-top: 0;
+  text-align: center;
+  background: #229aaf;
+}
+#footer a {
+  display: inline-block;
+  font-weight: 700;text-shadow:2px 2px 4px #000000;
+  margin-left: 30px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #080463;
+  font-size: 18px;
+}
+#footer a:hover {
+  color: white;
+}
+#footer p {
+  color: white;
+  font-size: 14px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+#footer .foot i {
+  color: #080463;
+  margin-top: 10px;
+  margin-bottom: -50px;
+  margin-left: 0px;
+  display: inline-block;
+}
+#footer .foot i:hover{color:white;}
+ @media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
